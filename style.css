@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee Hairline');
+@import url('https://fonts.googleapis.com/css?family=Londrina Sketch');
+@import url('https://fonts.googleapis.com/css?family=Sarpanch');
+
+html{
+	background: url('photos/background_02.png');
+	background-size: 1350px 950px;
+	background-repeat: no-repeat;
+	background-position: -60px 0px;
+}
+
+/*DEVELOPER*/
+.person{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.person .name{
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	font-size: 60px;
+	text-align: right;
+	font-family: Londrina Sketch;
+	font-style: bold;
+}
+
+.person .title{
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	top: -40px;
+
+	font-size: 20px;
+	text-align: right;
+	font-family: Sarpanch;
+	font-style: bold;
+	color: black;
+}
+
+.person .email{
+	top: 90px;
+	bottom: 0;
+	left: 0;
+	right: 15px;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	height: 15px;
+
+	font-size: 15px;
+	text-align: right;
+	font-family: Sarpanch;
+	color: black;
+}
+
+.developerPhoto{
+	opacity: 0;
+	-webkit-transition: opacity 600ms, visibility 600ms;
+
+	position: absolute;
+	float: left;
+
+	top:0;
+	bottom: 0;
+	left: 10px;
+	right: 0;
+
+	width: 65%;
+	height: 575px;
+	object-fit: cover;
+  	
+	z-index: -15;
+}
+
+.name:hover ~ .developerPhoto{
+	opacity: 1;
+}
+
+/*ABOUT*/
+.about{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+	margin-bottom: 110px;
+	padding: 0;
+	border: 0;
+	
+	width: 70%;
+	height: 275px;
+
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+
+	display: grid;
+  	grid-template-rows: 25% 75%;
+}
+
+.about p:not(.content){
+	height: 60px;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	text-align: center;
+	vertical-align: middle;
+
+	font-size: 30px;
+	font-family: Bungee Hairline;
+	font-style: bold;
+}
+
+.content{
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	margin-top: auto;
+	margin: auto;
+
+	text-align: center;
+	vertical-align: middle;
+
+	width: 90%;
+	height: 175px;
+
+	font-size: 24px;
+	font-family: Sarpanch;
+	font-style: bold;
+	text-transform: uppercase;
+}
+
+/*WORKS*/
+.works{
+	display: flex;
+	justify-content: space-around;
+
+	margin-top: 0;
+	margin-bottom: 40px;
+	padding: 0;
+	border: 0;
+
+	width: 100%;
+	height: 360px;
+
+	display: grid;
+	grid-gap: 10px;
+  	grid-template-rows: 50px 300px;
+
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.works p{
+	position: relative;
+	text-align: center;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	font-size: 30px;
+	font-family: Bungee Hairline;
+	font-style: bold;
+	color: white;
+}
+
+.creates{
+	width: 100%;
+	height: 275px;
+
+	display: grid;
+	grid-gap: 10%;
+  	grid-template-columns: 45% 45%;
+}
+
+.works a{
+	position: relative;
+	text-align: center;
+	width: 450px;
+	height: 275px;
+}
+
+.works a img{
+	position: relative;
+
+	width: 95%;
+	height: 100%;
+
+	object-fit: cover;
+}
+
+/*SKILLS*/
+.skillSet{
+	display: grid;
+	grid-row-gap: 10px;
+  	grid-template-rows: 65px 410px;
+
+	width: 100%;
+	height: 495px;
+
+	margin-top: 15px;
+	margin-bottom: 30px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	border: 0;
+}
+
+.skillSet p{
+	text-align: center;
+	vertical-align: middle;
+
+	height: 65px;
+	padding: 0;
+	border: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	font-size: 45px;
+	font-family: Sarpanch;
+	font-style: bold;
+}
+
+.skillTitleAndPhoto{
+	position: relative;
+
+	height: 100%;
+	width: 100%;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	display: grid;
+  	grid-template-columns: 45% 45%;
+}
+
+.skillTitleAndPhoto .logo{
+	height: 400px;
+	width: 400px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	object-fit: cover;
+
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+}
+
+.skillTitleAndPhoto ul {
+	list-style: none;
+
+	margin-top: auto;
+	margin-bottom: auto;
+
+	height: 410px;
+	width: 100%;
+	vertical-align: middle;
+
+	line-height: 100px;
+}
+
+.skills img{
+	height: 100px;
+	width: 100px;
+
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	
+	object-fit: cover;
+}
+
+/*CONTACT ME*/
+.contact{
+	width: 100%;
+
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	height: 70px;
+
+	background-color: rgb(0, 1, 33);
+}
+
+.contact a{
+	position: relative;
+	float: right; 
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+.contact .linkedIn img{
+	display: block;
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	height: 60px;
+	width: 60px;
+
+	object-fit: cover;
+	background-color: none;
+}
