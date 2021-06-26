@@ -1,0 +1,38 @@
+<mat-toolbar>
+  <mat-icon>account_box</mat-icon>
+  <span class="page-title">JOSHUA MANLICLIC</span>
+  <span class="toolbar-spacer"></span>
+  <button mat-button class="page-title-button" [routerLink]="['/']">ABOUT</button>
+  <button mat-button class="page-title-button" [routerLink]="['/skills']">SKILLS</button>
+  <button mat-icon-button class="page-contact-button" (click)="openLink()">CONTACT ME</button>
+</mat-toolbar>
+
+<mat-grid-list cols="1" rowHeight="75vh">
+  <mat-grid-tile>
+    <mat-card class="profile-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>RAMSES JOSHUA H. MANLICLIC</mat-card-title>
+          <mat-card-subtitle>PROGRAMMER PORTFOLIO</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="" >
+        <mat-card-content>
+          <mat-card-subtitle>SCHOOL - WORK HISTORY</mat-card-subtitle>
+          <mat-list role="list">
+            <mat-list-item listitem>
+              <mat-icon mat-list-icon>school</mat-icon> 
+              <div mat-line> Bachelor of Science in Infomation Technology Graduate at Informatics College Northgate</div>
+            </mat-list-item>  
+            <mat-list-item listitem>
+              <mat-icon mat-list-icon>code</mat-icon> 
+              <div mat-line> Unity C# Developer at Hive Manila (July 2020 - January 2021)</div>
+            </mat-list-item> 
+            <mat-list-item listitem>
+              <mat-icon mat-list-icon>code</mat-icon> 
+              <div mat-line> Programmer Trainee at Software Ventures International (May 2021 - Present)</div>
+            </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,30 @@
+<mat-toolbar>
+    <mat-icon class="page-title">engineering</mat-icon>
+    <span class="page-title">SKILLS</span>
+    <span class="toolbar-spacer"></span>
+    <button class="page-title-button" mat-button [routerLink]="['/']">ABOUT</button>
+    <button class="page-title-button" mat-button [routerLink]="['/skills']">SKILLS</button>
+    <button mat-icon-button class="page-contact-button" (click)="openLink()">CONTACT ME</button>
+</mat-toolbar>
+
+<div class="programming-languages-list">
+    <mat-grid-list [cols]="skillset.length" rowHeight="450px">
+    <mat-grid-tile *ngFor="let skill of skillset">
+        <mat-card class="programming-languages-skill-item">
+            <mat-card-title mat-line>{{skill.name}}</mat-card-title>
+            <mat-list role="list">
+                <div mat-subheader>LANGUAGES</div>
+                <mat-list-item listitem *ngFor="let language of skill.languages">
+                    <mat-icon mat-list-icon>description</mat-icon>
+                    <mat-card-subtitle mat-line>{{language.name}}</mat-card-subtitle>
+                </mat-list-item>
+                <div mat-subheader>OTHERS</div>
+                <mat-list-item listitem *ngFor="let language of skill.others">
+                    <mat-icon mat-list-icon>description</mat-icon>
+                    <mat-card-subtitle mat-line>{{language.name}}</mat-card-subtitle>
+                </mat-list-item>
+            </mat-list>
+        </mat-card>
+    </mat-grid-tile>
+    </mat-grid-list>
+</div>

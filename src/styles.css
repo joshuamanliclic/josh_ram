@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+html * {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/photos/background.png');
+  background-position-y: -170px;
+}

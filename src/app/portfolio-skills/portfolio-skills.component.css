@@ -1,0 +1,41 @@
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+.page-title{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.page-title-button{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.page-title-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 70%;
+    width: 100px;
+}
+
+.page-contact-button {
+    height: 70%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.programming-languages-list {
+    height: 75vh;
+    width: 100%;
+}
+
+.programming-languages-skill {
+    height: 20px;
+    font-size: 20px;
+}
+
+.programming-languages-skill-item {
+    width: 90%;
+    height: 90%;
+}

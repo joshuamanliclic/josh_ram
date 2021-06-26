@@ -1,0 +1,27 @@
+.toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+.page-title{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.page-title-button{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 70%;
+    width: 100px;
+}
+
+.page-contact-button {
+    height: 70%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.profile-card {
+    width: 70%;
+    vertical-align: middle;
+    margin: auto;
+}
