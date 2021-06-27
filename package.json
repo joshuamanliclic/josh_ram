@@ -6,8 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "deploy": "ng b --prod --base-href https://joshuamanliclic.github.io/josh_ram/ && npx ngh --dir=dist/portfolio"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
