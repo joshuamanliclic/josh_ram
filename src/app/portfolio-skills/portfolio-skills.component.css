@@ -9,13 +9,19 @@
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    /* -ms-overflow-style: none;
-    scrollbar-width: none; */
 }
 
-/* .programming-languages-skills::-webkit-scrollbar {
-    display: none;
-} */
+::-webkit-scrollbar {
+    width: 4px;
+    overflow-y: scroll;
+    background: grey;
+    box-shadow: inset 0 0 4px #707070;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(29, 29, 29);
+    border-radius: 10px;
+}
 
 .programming-languages-skill-item {
     height: 250px;
@@ -29,7 +35,6 @@
     height: 300px;
     width: 300px;
     object-fit: contain;
-    background-color: rgba(29, 29, 29, 0.822);
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -64,6 +69,10 @@
     color: white;
     font-size: large;
     line-height: 60px;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: nowrap;
 }
 
 .programming-skills-details-list div{

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { SkillDetails, Skills } from '../profile-skills';
 import { PortfolioService } from '../portfolio.service';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
@@ -28,5 +28,37 @@ export class PortfolioSkillsComponent implements OnInit {
         this.activeSkill = s;
       }
     });
+  }
+
+  @HostListener('window:keydown', ['$event'])
+
+  handleKeyboardEvent(event: KeyboardEvent) { 
+    if(this.activeSkill){
+      let skillIndex = 0;
+      let scrollContainer = document.getElementById('programming-languages-skills');
+      for(let i = 0; i < this.skillset.length; i++){
+        if(this.skillset[i] === this.activeSkill){
+          skillIndex = i;
+        }
+      }
+      if(event.key === "ArrowLeft"){
+        if(skillIndex > 0){
+          skillIndex--;
+          scrollContainer!.scrollLeft -= 250;
+        } 
+      }
+      else if(event.key === "ArrowRight"){
+        if(skillIndex < this.skillset.length - 1){
+          skillIndex++;
+          scrollContainer!.scrollLeft += 250;
+        } 
+      }
+
+      this.activeSkill = this.skillset[skillIndex];
+      this.setActive(this.skillset[skillIndex].name);
+    } else {
+      this.activeSkill = this.skillset[0];
+      this.setActive(this.skillset[0].name);
+    }
   }
 }
