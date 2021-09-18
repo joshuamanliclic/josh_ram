@@ -1,38 +1,32 @@
-<mat-toolbar>
-  <mat-icon>account_box</mat-icon>
-  <span class="page-title">JOSHUA MANLICLIC</span>
-  <span class="toolbar-spacer"></span>
-  <button mat-button class="page-title-button" [routerLink]="['/']">ABOUT</button>
-  <button mat-button class="page-title-button" [routerLink]="['/skills']">SKILLS</button>
-  <button mat-icon-button class="page-contact-button" (click)="openLink()">CONTACT ME</button>
-</mat-toolbar>
-
-<mat-grid-list cols="1" rowHeight="75vh">
-  <mat-grid-tile>
-    <mat-card class="profile-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>RAMSES JOSHUA H. MANLICLIC</mat-card-title>
-          <mat-card-subtitle>PROGRAMMER PORTFOLIO</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="" >
-        <mat-card-content>
-          <mat-card-subtitle>SCHOOL - WORK HISTORY</mat-card-subtitle>
-          <mat-list role="list">
-            <mat-list-item listitem>
-              <mat-icon mat-list-icon>school</mat-icon> 
-              <div mat-line> Bachelor of Science in Infomation Technology Graduate at Informatics College Northgate</div>
-            </mat-list-item>  
-            <mat-list-item listitem>
-              <mat-icon mat-list-icon>code</mat-icon> 
-              <div mat-line> Unity C# Developer at Hive Manila (July 2020 - January 2021)</div>
-            </mat-list-item> 
-            <mat-list-item listitem>
-              <mat-icon mat-list-icon>code</mat-icon> 
-              <div mat-line> Programmer Trainee at Software Ventures International (May 2021 - Present)</div>
-            </mat-list-item>
-          </mat-list>
-        </mat-card-content>
-    </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="profile-card">
+  <mat-grid-list cols="6" rowHeight="100%">
+    <mat-grid-tile colspan="2">
+      <div class="profile-card-details">
+        <img class="profile-card-photo" mat-card-image [src]="personalDetails?.photo" >
+        <mat-list class="profile-card-details-list" role="list">
+          <mat-list-item class="profile-card-details-list-item" listitem>
+            <label>{{ personalDetails?.name }}</label>
+          </mat-list-item>
+          <mat-list-item class="profile-card-details-list-item" listitem>
+            <label>{{ personalDetails?.position }}</label>
+          </mat-list-item>
+        </mat-list>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="4">
+      <div class="profile-card-history">
+        <label>SCHOOL - WORK HISTORY</label>
+        <mat-list role="list">
+          <mat-list-item listitem *ngFor="let history of personalDetails?.history">
+            <mat-icon *ngIf="history.type === 'school'" mat-list-icon>school</mat-icon> 
+            <mat-icon *ngIf="history.type === 'company'" mat-list-icon>devices</mat-icon> 
+            <div mat-line>{{ history.name }}</div>
+            <div mat-line>{{ history.position }}</div>
+            <div mat-line>{{ history.duration }}</div>
+            <div mat-line>{{ history.details }}</div>
+          </mat-list-item>  
+        </mat-list>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

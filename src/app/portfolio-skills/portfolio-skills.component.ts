@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Skills } from '../skills';
+import { SkillDetails, Skills } from '../profile-skills';
 import { PortfolioService } from '../portfolio.service';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { ProfileContactsComponent } from '../profile-contacts/profile-contacts.component';
@@ -10,22 +10,23 @@ import { ProfileContactsComponent } from '../profile-contacts/profile-contacts.c
   styleUrls: ['./portfolio-skills.component.css']
 })
 export class PortfolioSkillsComponent implements OnInit {
+  skillDetailLabel: string = "SKILL DETAILS"
   skillset: Skills [] = [];
+  activeSkill!: Skills;
 
-  constructor(private portfolioService: PortfolioService, private _bottomSheet: MatBottomSheet,) { }
+  constructor(private portfolioService: PortfolioService ) { }
 
   ngOnInit(): void {
     this.portfolioService.loadProfileSkills().subscribe(s => {
-      this.skillset = s,
-      s.forEach(sk => {
-        sk.languages.forEach(l => {
-          console.log(l.name);
-        })
-      })
+      this.skillset = s;
     });
   }
 
-  openLink(): void {
-    this._bottomSheet.open(ProfileContactsComponent);
+  setActive(skillName: string){
+    this.skillset.forEach(s => {
+      if(s.name === skillName){
+        this.activeSkill = s;
+      }
+    });
   }
 }

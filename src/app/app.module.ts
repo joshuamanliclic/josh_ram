@@ -15,6 +15,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { PortfolioSkillsComponent } from './portfolio-skills/portfolio-skills.component';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { ProfileContactsComponent } from './profile-contacts/profile-contacts.component';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ProfileContactsComponent } from './profile-contacts/profile-contacts.co
     MatToolbarModule,
     MatTabsModule,
     MatBottomSheetModule,
+    ScrollingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

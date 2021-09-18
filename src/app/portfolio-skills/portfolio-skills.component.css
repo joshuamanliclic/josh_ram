@@ -1,41 +1,74 @@
-.toolbar-spacer {
-    flex: 1 1 auto;
-}
-
-.page-title{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.page-title-button{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.page-title-button{
-    margin-left: 5px;
-    margin-right: 5px;
-    height: 70%;
-    width: 100px;
-}
-
-.page-contact-button {
-    height: 70%;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 .programming-languages-list {
-    height: 75vh;
+    height: 100%;
     width: 100%;
+    margin-top: 40px;
 }
 
-.programming-languages-skill {
-    height: 20px;
-    font-size: 20px;
+.programming-languages-skills {
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
 }
+
+/* .programming-languages-skills::-webkit-scrollbar {
+    display: none;
+} */
 
 .programming-languages-skill-item {
-    width: 90%;
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.programming-languages-skill-item-active {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    background-color: rgba(29, 29, 29, 0.822);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.programming-skill-photo {
     height: 90%;
+    width: 90%;
+    object-fit: contain;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 20%, rgba(29, 29, 150, 0.8) 60%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.programming-skills-details {
+    color: black;
+    width: 60%;
+    margin: 20px auto;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 20%, rgba(29, 29, 150, 0.8) 60%);
+}
+
+.programming-skills-details-title{
+    font-size: xx-large;
+    line-height: 60px;
+    width: 100% !important;
+    text-indent: 20px;
+}
+
+.programming-skills-details-list {
+    color: white;
+    font-size: large;
+    line-height: 60px;
+}
+
+.programming-skills-details-list div{
+    margin: 10px auto;
+    width: 100%;
+    text-indent: 20px;
+    background: rgb(29, 29, 29);
 }
