@@ -1,6 +1,6 @@
 <div class="programming-languages-list">
     <div class="programming-languages-skills" id="programming-languages-skills">
-        <div *ngFor="let skill of skillset" (mouseenter)="setActive(skill.name)" (click)="setActive(skill.name)" [ngClass]="(activeSkill?.name === skill.name) ? 'programming-languages-skill-item-active' : 'programming-languages-skill-item'">
+        <div *ngFor="let skill of skillset" (mouseenter)="setActive(skill.name)" (click)="skill.name === 'Profile' ? nextPage(listOfPages[0]) : setActive(skill.name)" [ngClass]="(activeSkill?.name === skill.name) ? 'programming-languages-skill-item-active' : 'programming-languages-skill-item'">
             <img class="programming-skill-photo" [src]="skill.logoURL"/>
         </div>
     </div>

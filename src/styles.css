@@ -12,3 +12,14 @@ body {
   background-image: url('./assets/photos/background.png');
   background-position-y: -170px;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* @-moz-document url-prefix() {
+  html,
+  body{
+    scrollbar-width: none;
+  }
+} */

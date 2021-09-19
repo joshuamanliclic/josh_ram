@@ -13,6 +13,7 @@ export class PortfolioSkillsComponent implements OnInit {
   skillDetailLabel: string = "SKILL DETAILS"
   skillset: Skills [] = [];
   activeSkill!: Skills;
+  listOfPages: string[] = [];
 
   constructor(private portfolioService: PortfolioService ) { }
 
@@ -20,6 +21,8 @@ export class PortfolioSkillsComponent implements OnInit {
     this.portfolioService.loadProfileSkills().subscribe(s => {
       this.skillset = s;
     });
+
+    this.listOfPages = this.portfolioService.listOfPages;
   }
 
   setActive(skillName: string){
@@ -50,7 +53,7 @@ export class PortfolioSkillsComponent implements OnInit {
       else if(event.key === "ArrowRight"){
         if(skillIndex < this.skillset.length - 1){
           skillIndex++;
-          scrollContainer!.scrollLeft += 250;
+          scrollContainer!.scrollLeft += 150;
         } 
       }
 
@@ -60,5 +63,9 @@ export class PortfolioSkillsComponent implements OnInit {
       this.activeSkill = this.skillset[0];
       this.setActive(this.skillset[0].name);
     }
+  }
+
+  nextPage(newPage: string){
+    this.portfolioService.nextPage(newPage);
   }
 }

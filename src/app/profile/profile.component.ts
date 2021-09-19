@@ -13,6 +13,7 @@ import { Details } from '../profile-details';
 })
 export class ProfileComponent implements OnInit {
   personalDetails!: Details;
+  listOfPages: string[] = [];
 
   constructor(private portfolioService: PortfolioService, private route: ActivatedRoute ) { }
 
@@ -20,5 +21,11 @@ export class ProfileComponent implements OnInit {
     this.portfolioService.loadProfileDetails().subscribe(d => {
       this.personalDetails = d;
     });
+
+    this.listOfPages = this.portfolioService.listOfPages;
+  }
+
+  nextPage(newPage: string){
+    this.portfolioService.nextPage(newPage);
   }
 }
