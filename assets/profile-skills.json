@@ -138,5 +138,14 @@
                 "text": "Object Oriented Programming"
             }
         ]
+    },
+    {
+        "name": "Profile",
+        "logoURL": "https://cdn0.iconfinder.com/data/icons/man-user-human-profile-avatar-person-business/100/10-1User_13-512.png",
+        "skillDetails": [
+            {
+                "text": "Return to Profile"
+            }
+        ]
     }
 ]
