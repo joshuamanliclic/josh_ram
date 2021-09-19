@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Angular",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/768px-Angular_full_color_logo.svg.png",
+        "skillDetails": [
+            {
+                "text": "HTML"
+            },
+            {
+                "text": "CSS"
+            },
+            {
+                "text": "Typescript"
+            },
+            {
+                "text": "Angular Material"
+            },
+            {
+                "text": "Payara Micro"
+            }
+        ]
+    },
+    {
+        "name": "Unity",
+        "logoURL": "https://unity.com/logo-unity-web.png",
+        "skillDetails": [
+            {
+                "text": "Windows Games Development"
+            },
+            {
+                "text": "Mobile Games Development"
+            },
+            {
+                "text": "Photon Engine"
+            },{
+                "text": "Basic Firebase"
+            }
+        ]
+    },
+    {
+        "name": "Java",
+        "logoURL": "https://logoeps.com/wp-content/uploads/2011/06/java-logo-vector.png",
+        "skillDetails": [
+            {
+                "text": "Java EE"
+            },
+            {
+                "text": "XML"
+            },
+            {
+                "text": "Payara"
+            }
+        ]
+    },
+    {
+        "name": "Linux",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png",
+        "skillDetails": [
+            {
+                "text": "PuTTY"
+            }
+        ]
+    },
+    {
+        "name": "Payara",
+        "logoURL": "https://www.payara.fish/payara-site/themes/payara/nav/logo-social.png",
+        "skillDetails": [
+            {
+                "text": "Payara Micro"
+            }
+        ]
+    },
+    {
+        "name": "Blender",
+        "logoURL": "https://download.blender.org/branding/blender_logo_socket.png",
+        "skillDetails": [
+            {
+                "text": "3D Creation"
+            },
+            {
+                "text": "Rigging"
+            },
+            {
+                "text": "Animation"
+            }
+        ]
+    },
+    {
+        "name": "MS Office",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png",
+        "skillDetails": [
+            {
+                "text": "PBI"
+            },
+            {
+                "text": "WORD"
+            },
+            {
+                "text": "EXCEL"
+            },
+            {
+                "text": "POWERPOINT"
+            }
+        ]
+    },
+    {
+        "name": "Photoshop",
+        "logoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png",
+        "skillDetails": [
+            {
+                "text": "WITH NCIII TESDA"
+            }
+        ]
+    },
+    {
+        "name": "Other Skills",
+        "logoURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiaE6ZM00IO4JPjcHOAFwXHGFFQ3LBNAXGMn17VZlpi-mVFlKNRqOc2pRWJsV8XgxPBQY&usqp=CAU.png",
+        "skillDetails": [
+            {
+                "text": "Basic C#"
+            },
+            {
+                "text": "Basic C++"
+            },
+            {
+                "text": "Javascript"
+            },
+            {
+                "text": "AJAX"
+            },
+            {
+                "text": "Structure Software Testing"
+            },
+            {
+                "text": "Knowledgable in Git"
+            },
+            {
+                "text": "Object Oriented Programming"
+            }
+        ]
+    }
+]
