@@ -47,13 +47,13 @@ export class PortfolioSkillsComponent implements OnInit {
       if(event.key === "ArrowLeft"){
         if(skillIndex > 0){
           skillIndex--;
-          scrollContainer!.scrollLeft -= 250;
+          scrollContainer!.scrollLeft -= 175;
         } 
       }
       else if(event.key === "ArrowRight"){
         if(skillIndex < this.skillset.length - 1){
           skillIndex++;
-          scrollContainer!.scrollLeft += 150;
+          scrollContainer!.scrollLeft += 175;
         } 
       }
 

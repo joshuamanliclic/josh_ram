@@ -17,9 +17,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* @-moz-document url-prefix() {
+@-moz-document url-prefix() {
   html,
   body{
     scrollbar-width: none;
   }
-} */
+}

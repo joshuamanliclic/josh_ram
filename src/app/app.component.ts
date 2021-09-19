@@ -11,7 +11,7 @@ import { ProfileContactsComponent } from './profile-contacts/profile-contacts.co
 })
 export class AppComponent {
   title: string = "Portfolio";
-  iconsArray: string [] = ["attach_money", "account_box", "settings", "email"]
+  iconsArray: string [] = ["attach_money", "info", "engineering", "email"]
   pageIcon: string = this.iconsArray[0];
   listOfPages: string[] = [];
 
