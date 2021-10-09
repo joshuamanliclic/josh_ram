@@ -11,12 +11,6 @@
             },
             {
                 "text": "Typescript"
-            },
-            {
-                "text": "Angular Material"
-            },
-            {
-                "text": "Payara Micro"
             }
         ]
     },
@@ -32,7 +26,8 @@
             },
             {
                 "text": "Photon Engine"
-            },{
+            },
+            {
                 "text": "Basic Firebase"
             }
         ]
@@ -45,11 +40,18 @@
                 "text": "Java EE"
             },
             {
-                "text": "XML"
+                "text": "Payara"
             },
             {
-                "text": "Payara"
+                "text": "Web Service"
+            },
+            {
+                "text": "Solr"
+            },
+            {
+                "text": "AWS S3"
             }
+
         ]
     },
     {
@@ -58,15 +60,6 @@
         "skillDetails": [
             {
                 "text": "PuTTY"
-            }
-        ]
-    },
-    {
-        "name": "Payara",
-        "logoURL": "https://www.payara.fish/payara-site/themes/payara/nav/logo-social.png",
-        "skillDetails": [
-            {
-                "text": "Payara Micro"
             }
         ]
     },
@@ -113,7 +106,7 @@
         ]
     },
     {
-        "name": "Other Skills",
+        "name": "Other Skill and Practices",
         "logoURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiaE6ZM00IO4JPjcHOAFwXHGFFQ3LBNAXGMn17VZlpi-mVFlKNRqOc2pRWJsV8XgxPBQY&usqp=CAU.png",
         "skillDetails": [
             {
@@ -126,10 +119,7 @@
                 "text": "Javascript"
             },
             {
-                "text": "AJAX"
-            },
-            {
-                "text": "Structure Software Testing"
+                "text": "Structured Software Testing"
             },
             {
                 "text": "Knowledgable in Git"
