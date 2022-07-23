@@ -1,6 +1,6 @@
 {
     "name": "Ramses Joshua H. Manliclic",
-    "position": "Junior Programmer",
+    "position": "Programmer",
     "photo": "assets/photos/ram04.png",
     "history": [
         {
@@ -22,7 +22,7 @@
             "type": "company",
             "position": "Programmer Trainee (May - July) - Junior Programmer (Present)",
             "duration": "May 2021 - Present",
-            "details": null
+            "details": null       
         }
     ]
 }
