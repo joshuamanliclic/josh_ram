@@ -125,5 +125,10 @@
                 "logo": "https://www.pngall.com/wp-content/uploads/2018/05/Files-High-Quality-PNG.png"
             }
         ]
+    },
+    {
+        "name": "Solr",
+        "logoURL": "https://pureinsights.com/wp-content/uploads/2022/04/Apache_Solr-Logo.wine_.png",
+        "skillDetails": []
     }
 ]
