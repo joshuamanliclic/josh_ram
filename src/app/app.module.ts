@@ -16,6 +16,7 @@ import { PortfolioSkillsComponent } from './portfolio-skills/portfolio-skills.co
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { ProfileContactsComponent } from './profile-contacts/profile-contacts.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MglTimelineModule } from 'angular-mgl-timeline';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     MatTabsModule,
     MatBottomSheetModule,
     ScrollingModule,
+    MglTimelineModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

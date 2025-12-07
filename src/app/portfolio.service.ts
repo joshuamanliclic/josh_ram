@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Skills } from './profile-skills';
-import { Details } from './profile-details';
+import { ProfileDetails, ProfileHistory } from './profile-details';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -19,7 +19,7 @@ export class PortfolioService {
   }
 
   loadProfileDetails() {
-    return this.http.get<Details>('assets/profile-details.json');
+    return this.http.get<ProfileDetails>('assets/profile-details.json');
   }
 
   loadProfileSkills() {

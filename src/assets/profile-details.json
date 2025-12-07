@@ -1,13 +1,13 @@
 {
     "name": "Ramses Joshua H. Manliclic",
-    "position": "Junior Programmer",
-    "photo": "assets\\photos\\programmer-photo.png",
+    "position": "Software Programmer",
+    "photo": "assets/photos/ram.png",
     "history": [
         {
             "name": "Informatics College Northgate",
             "type": "school",
             "position": "Student",
-            "duration": null,
+            "duration": "2017 - 2020",
             "details": null
         },
         {
@@ -20,9 +20,9 @@
         {
             "name": "Software Ventures International",
             "type": "company",
-            "position": "Programmer Trainee (May - July) - Junior Programmer (Present)",
+            "position": "Programmer Trainee (May - July) - Software Programmer (Present)",
             "duration": "May 2021 - Present",
-            "details": null
+            "details": null       
         }
     ]
 }

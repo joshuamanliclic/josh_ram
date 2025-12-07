@@ -6,4 +6,5 @@ export interface Skills {
 
 export interface SkillDetails {
     text: string
+    logo: string
 }

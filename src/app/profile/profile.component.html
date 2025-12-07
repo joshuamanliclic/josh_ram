@@ -1,32 +1,38 @@
-<div class="profile-card" (click)="nextPage(listOfPages[1])">
-  <mat-grid-list cols="6" rowHeight="100%">
-    <mat-grid-tile colspan="2">
-      <div class="profile-card-details">
-        <img class="profile-card-photo" mat-card-image [src]="personalDetails?.photo" >
-        <mat-list class="profile-card-details-list" role="list">
-          <mat-list-item class="profile-card-details-list-item" listitem>
-            <label>{{ personalDetails?.name }}</label>
-          </mat-list-item>
-          <mat-list-item class="profile-card-details-list-item" listitem>
-            <label>{{ personalDetails?.position }}</label>
-          </mat-list-item>
-        </mat-list>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="4">
-      <div class="profile-card-history">
-        <label>SCHOOL - WORK HISTORY</label>
-        <mat-list role="list">
-          <mat-list-item listitem *ngFor="let history of personalDetails?.history">
-            <mat-icon *ngIf="history.type === 'school'" mat-list-icon>school</mat-icon> 
-            <mat-icon *ngIf="history.type === 'company'" mat-list-icon>devices</mat-icon> 
-            <div mat-line>{{ history.name }}</div>
-            <div mat-line>{{ history.position }}</div>
-            <div mat-line>{{ history.duration }}</div>
-            <div mat-line>{{ history.details }}</div>
-          </mat-list-item>  
-        </mat-list>
-      </div>
+<div class="profile-banner">
+  <img class="profile-photo" [src]="profileDetails?.photo" >
+  <div class="profile-name-and-pos">
+    <label class="profile-details-name">{{ profileDetails?.name }}</label>
+    <label class="profile-details-position"><{{ profileDetails?.position }}></label>
+  </div>
+</div>
+
+<div class="profile-history">
+  <label class="profile-history-title">Work Experience</label>
+  <mgl-timeline class="profile-timeline-entry" [toggle]="toggle" [alternate]="alternate" [side]="side">
+    <mgl-timeline-entry *ngFor="let entry of entries; let i = index;" (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header (click)="onHeaderClick($event)">
+        <div class="profile-timeline-entry-title">{{entry.name}}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content [expandAnimationTiming]="contentAnimation ? '200ms ease' : '0ms'" [collapseAnimationTiming]="contentAnimation ? '100ms ease' : '0ms'">
+        <div>
+          <!-- <div class="profile-timeline-entry-details-value">{{entry.type | uppercase}}</div> -->
+          <div class="profile-timeline-entry-details-key">Position Title: </div>
+          <div class="profile-timeline-entry-details-value">{{entry.position}}</div>
+          <div class="profile-timeline-entry-details-key" *ngIf="entry.details">Other: </div>
+          <div class="profile-timeline-entry-details-value" *ngIf="entry.details">{{entry.details}}</div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot class=profile-history-dot [size]="size"></mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="profile-timeline-entry-date">{{entry.duration}}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+  </mgl-timeline>
+</div>
+
+<div class="profile-skillset">
+  <label class="profile-history-title">Skillset</label>
+  <mat-grid-list cols="3" rowHeight="fit" class="programming-languages-list">
+    <mat-grid-tile *ngFor="let skill of skillset" class="programming-languages-skill" colspan="1">
+      <img class="programming-skill-photo" [src]="skill.logoURL"/>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

@@ -1,11 +1,11 @@
-export interface Details {
+export interface ProfileDetails {
     name: string
     position: string
     photo: string
-    history: Array<History>
+    history: Array<ProfileHistory>
 }
 
-export interface History {
+export interface ProfileHistory {
     name: string
     type: string
     position: string
