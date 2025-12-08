@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { Router } from '@angular/router';
-import { PortfolioService } from './portfolio.service';
-import { ProfileContactsComponent } from './profile-contacts/profile-contacts.component';
-import { ProfileDetails, ProfileHistory } from './profile-details';
+import { PortfolioService } from './services/portfolio.service';
+import { ProfileContactsComponent } from './components/profile-contacts/profile-contacts.component';
+import { ProfileDetails, ProfileHistory } from './interfaces/profile-details';
 
 @Component({
   selector: 'app-root',

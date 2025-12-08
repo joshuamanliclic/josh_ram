@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { SkillDetails, Skills } from '../profile-skills';
-import { PortfolioService } from '../portfolio.service';
+import { SkillDetails, Skills } from '../../interfaces/profile-skills';
+import { PortfolioService } from '../../services/portfolio.service';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { ProfileContactsComponent } from '../profile-contacts/profile-contacts.component';
 

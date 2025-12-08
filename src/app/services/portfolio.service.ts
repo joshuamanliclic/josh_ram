@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Skills } from './profile-skills';
-import { ProfileDetails, ProfileHistory } from './profile-details';
+import { Skills } from '../interfaces/profile-skills';
+import { ProfileDetails, ProfileHistory } from '../interfaces/profile-details';
 import { Router } from '@angular/router';
 
 @Injectable({

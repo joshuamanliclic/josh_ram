@@ -28,11 +28,13 @@
   </mgl-timeline>
 </div>
 
-<div class="profile-skillset">
-  <label class="profile-history-title">Skillset</label>
+<!-- <div class="profile-skillset">
+  <label class="profile-history-title">Certifications</label>
   <mat-grid-list cols="3" rowHeight="fit" class="programming-languages-list">
     <mat-grid-tile *ngFor="let skill of skillset" class="programming-languages-skill" colspan="1">
       <img class="programming-skill-photo" [src]="skill.logoURL"/>
     </mat-grid-tile>
   </mat-grid-list>
-</div>
+</div> -->
+
+<app-certifications></app-certifications>

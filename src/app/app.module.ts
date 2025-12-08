@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
@@ -12,18 +12,21 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
-import { PortfolioSkillsComponent } from './portfolio-skills/portfolio-skills.component';
+import { PortfolioSkillsComponent } from './components/portfolio-skills/portfolio-skills.component';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
-import { ProfileContactsComponent } from './profile-contacts/profile-contacts.component';
+import { ProfileContactsComponent } from './components/profile-contacts/profile-contacts.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MglTimelineModule } from 'angular-mgl-timeline';
+import { CertificationsComponent } from './components/certifications/certifications.component';
+import { AgGridAngular } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     PortfolioSkillsComponent,
-    ProfileContactsComponent
+    ProfileContactsComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { MglTimelineModule } from 'angular-mgl-timeline';
     MatBottomSheetModule,
     ScrollingModule,
     MglTimelineModule,
+    AgGridAngular
   ],
   providers: [],
   bootstrap: [AppComponent]

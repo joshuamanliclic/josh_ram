@@ -21,7 +21,14 @@
             "name": "Software Ventures International",
             "type": "company",
             "position": "Programmer Trainee (May - July) - Software Programmer (Present)",
-            "duration": "May 2021 - Present",
+            "duration": "May 2021 - June 2023",
+            "details": null       
+        },
+        {
+            "name": "Doehle Shipmanagement Phils. Corp",
+            "type": "company",
+            "position": "Front-End Developer",
+            "duration": "June 2023 - February 2025",
             "details": null       
         }
     ]

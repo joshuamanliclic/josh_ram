@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Skills } from '../profile-skills';
-import { PortfolioService } from '../portfolio.service';
+import { Skills } from '../../interfaces/profile-skills';
+import { PortfolioService } from '../../services/portfolio.service';
 import { ActivatedRoute } from '@angular/router';
-import { MatBottomSheet } from '@angular/material/bottom-sheet';
-import { ProfileContactsComponent } from '../profile-contacts/profile-contacts.component';
-import { ProfileDetails, ProfileHistory } from '../profile-details';
+import { ProfileDetails, ProfileHistory } from '../../interfaces/profile-details';
 
 @Component({
   selector: 'app-profile',
