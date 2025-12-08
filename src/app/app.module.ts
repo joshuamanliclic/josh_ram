@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,33 +22,26 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectClipComponent } from './components/project-clip/project-clip.component';
 
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    ProfileComponent,
-    PortfolioSkillsComponent,
-    ProfileContactsComponent,
-    ProjectsComponent,
-    ProjectClipComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatListModule,
-    HttpClientModule,
-    MatIconModule,
-    MatGridListModule,
-    MatToolbarModule,
-    MatTabsModule,
-    MatBottomSheetModule,
-    ScrollingModule,
-    MglTimelineModule,
-    AgGridModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        ProfileComponent,
+        PortfolioSkillsComponent,
+        ProfileContactsComponent,
+        ProjectsComponent,
+        ProjectClipComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        MatListModule,
+        MatIconModule,
+        MatGridListModule,
+        MatToolbarModule,
+        MatTabsModule,
+        MatBottomSheetModule,
+        ScrollingModule,
+        MglTimelineModule,
+        AgGridModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { 
 }
