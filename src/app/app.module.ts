@@ -18,7 +18,8 @@ import { ProfileContactsComponent } from './components/profile-contacts/profile-
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 import { CertificationsComponent } from './components/certifications/certifications.component';
-import { AgGridAngular } from 'ag-grid-angular';
+import { AgGridModule } from '@ag-grid-community/angular';
+
 
 @NgModule({
   declarations: [
@@ -42,9 +43,10 @@ import { AgGridAngular } from 'ag-grid-angular';
     MatBottomSheetModule,
     ScrollingModule,
     MglTimelineModule,
-    AgGridAngular
+    AgGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+}
