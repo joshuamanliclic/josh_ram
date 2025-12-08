@@ -25,7 +25,10 @@ export class ProfileComponent implements OnInit {
   side = 'left';
   entries: ProfileHistory[] = [];
 
-  constructor(private portfolioService: PortfolioService, private route: ActivatedRoute ) { }
+  constructor(
+    private portfolioService: PortfolioService, 
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
     this.portfolioService.loadProfileDetails().subscribe(d => {

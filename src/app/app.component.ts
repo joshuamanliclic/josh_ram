@@ -13,7 +13,7 @@ import { ProfileDetails, ProfileHistory } from './interfaces/profile-details';
 export class AppComponent {
   title!: string;
 
-  pageTitle: string = "Hello! This is my portfolio";
+  pageTitle: string = "";
   iconsArray: string [] = ["attach_money", "info", "engineering", "email"]
   pageIcon: string = this.iconsArray[0];
   listOfPages: string[] = [];
