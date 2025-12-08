@@ -1,0 +1,31 @@
+.profile-timeline-entry-date {
+    color: white;
+    font-size: large;
+}
+
+.profile-timeline-entry {
+    color:  black;
+    width: 66% !important;
+    margin: auto !important;
+}
+
+.profile-timeline-entry-title {
+    font-size: large;
+    color: black;
+}
+
+.profile-timeline-entry-details-key {
+    font-size: medium;
+    color: rgb(19, 19, 75);
+}
+
+.profile-timeline-entry-details-value { 
+    font-size: small;
+    text-indent: 10px;
+    color: rgb(69, 69, 69);
+}
+
+.profile-history-dot {
+    text-align: center;
+    background-color: rgb(255, 153, 0);
+}

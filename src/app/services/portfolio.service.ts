@@ -28,6 +28,6 @@ export class PortfolioService {
   }
 
   loadProjects() {
-    return this.http.get<Projects[]>('assets/projects-list.json');
+    return this.http.get<Projects[]>('assets/project-list.json');
   }
 }

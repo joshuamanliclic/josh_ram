@@ -1,32 +1,5 @@
-<div class="programming-languages-list">
-    <div class="programming-languages-skills" id="programming-languages-skills">
-        <div *ngFor="let skill of skillset" (mouseenter)="setActive(skill.name)" (click)="skill.name === 'Profile' ? nextPage(listOfPages[0]) : setActive(skill.name)" class="programming-languages-skill-item">
-            <img class="programming-skill-photo" [ngClass]="(activeSkill?.name === skill.name) ? 'programming-skill-photo-active' : 'programming-skill-photo'"  [src]="skill.logoURL"/>
-        </div>
-    </div>
-</div>
-
-<div class="programming-page-body">
-    <div class="programming-skills-details" *ngIf="activeSkill && activeSkill.skillDetails">
-        <div class="programming-skills-details-title">
-            <label>{{ activeSkill.name | uppercase }}</label>
-        </div>
-        <div class="programming-skills-details-list">
-            <div *ngFor="let skill of activeSkill.skillDetails" class="programming-subSkills-container">
-                <div>
-                    <img class="programming-subSkill-photo" [src]="skill.logo"/>
-                </div>
-                <label>{{ skill.text }}</label>
-            </div>
-        </div>
-    </div>
-    
-    <div class="programming-project-details" *ngIf="activeSkill && activeSkill.skillDetails">
-        <div class="programming-project-details-title">
-            <label></label>
-        </div>
-        <div class="programming-project-details-list">
-            <p><p>
-        </div>
-    </div>
-</div>
+<mat-grid-list cols="3" rowHeight="fit" class="programming-languages-list">
+    <mat-grid-tile *ngFor="let skill of skillset" class="programming-languages-skill" colspan="1">
+      <img class="programming-skill-photo" [src]="skill.logoURL"/>
+    </mat-grid-tile>
+</mat-grid-list>

@@ -1,3 +1,15 @@
-for (project of listOfProjects; track null) {
-      <app-project-clip [projectUrl]="project.url"></app-project-clip>
-}
+<mat-grid-list cols="3" rowHeight="fit" class="project-container">
+      @for(project of listOfVideoProjects; track null){
+            <mat-grid-tile colspan="1">
+                  <app-project-clip [project]="project" class="project-cards"></app-project-clip>
+            </mat-grid-tile>
+      }
+</mat-grid-list>
+
+<mat-grid-list cols="1" rowHeight="fit" class="project-container">
+      @for(project of listOfWebProjects; track null){
+            <mat-grid-tile colspan="1">
+                  <app-project-clip [project]="project" class="project-cards"></app-project-clip>
+            </mat-grid-tile>
+      }
+</mat-grid-list>

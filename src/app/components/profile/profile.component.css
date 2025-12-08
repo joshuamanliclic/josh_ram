@@ -60,66 +60,12 @@
     font-family: 'Russo One', sans-serif;
 }
 
-.profile-timeline-entry-date {
-    color: white;
-    font-size: large;
-}
-
-.profile-timeline-entry {
-    color:  black;
-    width: 66% !important;
-    margin: auto !important;
-}
-
-.profile-timeline-entry-title {
-    font-size: large;
-    color: black;
-}
-
-.profile-timeline-entry-details-key {
-    font-size: medium;
-    color: rgb(19, 19, 75);
-}
-
-.profile-timeline-entry-details-value { 
-    font-size: small;
-    text-indent: 10px;
-    color: rgb(69, 69, 69);
-}
-
-.profile-history-dot {
-    text-align: center;
-    background-color: rgb(255, 153, 0);
-}
-
 .profile-skillset {
-    height: 1250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.programming-languages-list {
-    height: 100%;
-    width: 100%;
-}
-
-.programming-languages-skill {
-    height: auto;
-    width: auto;
-}
-
-.programming-skill-photo {
-    height: 60%;
-    width: 60%;
-    object-fit: contain;
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 20%, rgba(29, 29, 150, 0.8) 60%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-style: solid;
-    border-width: thick;
-    border-color: rgb(29, 29, 29);
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+.profile-skillset-container {
+    height: 1250px;
 }

@@ -1,1 +1,21 @@
-<iframe [src]="getSafeYoutubeUrl('')" width="100%" height="600px" frameborder="0"></iframe>
+@if(isVideo()){
+    <mat-card class="project-card">
+        <mat-card-header>
+        </mat-card-header>
+        
+        <iframe [src]="getSafeYoutubeUrl(project.url)" width="100%" height="100%" frameborder="0"></iframe>
+        
+        <mat-card-content>
+        </mat-card-content>
+    </mat-card>
+} @else if(!isVideo()) {
+    <mat-card class="project-web-card">
+        <mat-card-header>
+        </mat-card-header>
+        
+        <iframe [src]="getSafeWebsiteUrl(project.url)" width="100%" height="100%" frameborder="0"></iframe>
+        
+        <mat-card-content>
+        </mat-card-content>
+    </mat-card>
+}

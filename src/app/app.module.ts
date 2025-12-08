@@ -20,15 +20,17 @@ import { MglTimelineModule } from 'angular-mgl-timeline';
 import { AgGridModule } from '@ag-grid-community/angular';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectClipComponent } from './components/project-clip/project-clip.component';
+import { WorkHistoryComponent } from './components/work-history/work-history.component';
 
-
-@NgModule({ declarations: [
+@NgModule({ 
+    declarations: [
         AppComponent,
         ProfileComponent,
         PortfolioSkillsComponent,
         ProfileContactsComponent,
         ProjectsComponent,
         ProjectClipComponent,
+        WorkHistoryComponent,
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,
@@ -42,6 +44,7 @@ import { ProjectClipComponent } from './components/project-clip/project-clip.com
         MatBottomSheetModule,
         ScrollingModule,
         MglTimelineModule,
-        AgGridModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
+        AgGridModule], 
+    providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { 
 }

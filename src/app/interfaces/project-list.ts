@@ -1,3 +1,4 @@
 export interface Projects {
-    url: string
+    url: string,
+    type: string
 }

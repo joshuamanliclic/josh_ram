@@ -3,6 +3,7 @@ import { Skills } from '../../interfaces/profile-skills';
 import { PortfolioService } from '../../services/portfolio.service';
 import { ActivatedRoute } from '@angular/router';
 import { ProfileDetails, ProfileHistory } from '../../interfaces/profile-details';
+import { WorkHistoryComponent } from '../work-history/work-history.component';
 
 @Component({
   selector: 'app-profile',
@@ -15,15 +16,7 @@ export class ProfileComponent implements OnInit {
   skillset: Skills [] = [];
 
   //career timeline
-  alternate: boolean = true;
-  toggle: boolean = true;
-  color: boolean = false;
-  size: number = 60;
-  expandEnabled: boolean = true;
-  contentAnimation: boolean = true;
-  dotAnimation: boolean = true;
-  side = 'left';
-  entries: ProfileHistory[] = [];
+  history: ProfileHistory[] = [];
 
   constructor(
     private portfolioService: PortfolioService, 
@@ -33,7 +26,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     this.portfolioService.loadProfileDetails().subscribe(d => {
       this.profileDetails = d;
-      this.entries = d.history;
+      this.history = d.history;
     });
     
     this.portfolioService.loadProfileSkills().subscribe(s => {
@@ -45,33 +38,5 @@ export class ProfileComponent implements OnInit {
 
   nextPage(newPage: string){
     this.portfolioService.nextPage(newPage);
-  }
-
-  addEntry() {
-
-  }
-
-  removeEntry() {
-    this.entries.pop();
-  }
-
-  onHeaderClick(event: any) {
-    if (!this.expandEnabled) {
-      event.stopPropagation();
-    }
-  }
-
-  onDotClick(event: any) {
-    if (!this.expandEnabled) {
-      event.stopPropagation();
-    }
-  }
-
-  onExpandEntry(expanded: any, index: any) {
-    console.log(`Expand status of entry #${index} changed to ${expanded}`)
-  }
-
-  toggleSide() {
-    this.side = this.side === 'left' ? 'right' : 'left';
   }
 }
