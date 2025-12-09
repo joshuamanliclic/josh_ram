@@ -7,3 +7,10 @@
     height: 600px;
     width: 1200px;
 }
+
+.project-cert-card {
+    background-color: red;
+    height: 600px;
+    width: 1200px;
+    color: white;
+}

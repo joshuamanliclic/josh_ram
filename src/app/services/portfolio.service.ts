@@ -4,6 +4,7 @@ import { Skills } from '../interfaces/profile-skills';
 import { ProfileDetails, ProfileHistory } from '../interfaces/profile-details';
 import { Router } from '@angular/router';
 import { Projects } from '../interfaces/project-list';
+import { Certificates } from '../interfaces/certifications';
 
 @Injectable({
   providedIn: 'root'
@@ -29,5 +30,9 @@ export class PortfolioService {
 
   loadProjects() {
     return this.http.get<Projects[]>('assets/project-list.json');
+  }
+
+  loadCertifications() {
+    return this.http.get<Certificates[]>('assets/certifications.json');
   }
 }

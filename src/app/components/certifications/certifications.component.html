@@ -1,0 +1,7 @@
+<mat-grid-list cols="3" rowHeight="fit" class="project-container">
+    @for(certification of certifications; track null){
+        <mat-grid-tile colspan="1" (click)="open(certification.link)">
+            <iframe [src]="getSafeCertUrl(certification.link)" class="project-cert" scrolling="no"></iframe>
+        </mat-grid-tile>
+    }
+</mat-grid-list>

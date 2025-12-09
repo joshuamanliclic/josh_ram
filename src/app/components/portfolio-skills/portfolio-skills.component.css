@@ -10,14 +10,16 @@
 .programming-skill-photo {
     height: 60%;
     width: 60%;
+    padding: 20px;
     object-fit: contain;
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 20%, rgba(29, 29, 150, 0.8) 60%);
+    /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 20%, rgba(29, 29, 150, 0.8) 60%); */
+    background-color: rgba(255, 255, 255, 0.15);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-style: solid;
+    /* border-style: solid;
     border-width: thick;
-    border-color: rgb(29, 29, 29);
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+    border-color: rgb(29, 29, 29); */
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 9px;
 }

@@ -21,6 +21,7 @@ import { AgGridModule } from '@ag-grid-community/angular';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectClipComponent } from './components/project-clip/project-clip.component';
 import { WorkHistoryComponent } from './components/work-history/work-history.component';
+import { CertificationsComponent } from './components/certifications/certifications.component';
 
 @NgModule({ 
     declarations: [
@@ -31,8 +32,10 @@ import { WorkHistoryComponent } from './components/work-history/work-history.com
         ProjectsComponent,
         ProjectClipComponent,
         WorkHistoryComponent,
+        CertificationsComponent
     ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
+    bootstrap: [AppComponent], 
+    imports: [BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         MatCardModule,
@@ -44,7 +47,8 @@ import { WorkHistoryComponent } from './components/work-history/work-history.com
         MatBottomSheetModule,
         ScrollingModule,
         MglTimelineModule,
-        AgGridModule], 
+        AgGridModule
+    ], 
     providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { 
 }

@@ -1,0 +1,16 @@
+.project-container {
+    width: 100%;
+    height: 1400px;
+    display: block;
+}
+
+.project-cert {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+mat-grid-tile:hover {
+    background-color: rgba(115, 115, 115, 0.281);
+}
