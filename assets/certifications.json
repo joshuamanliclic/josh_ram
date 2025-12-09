@@ -1,0 +1,42 @@
+[
+    {
+        "link":"assets/certifications/Advanced Angular Development.pdf",
+        "photo":"assets/photos/certifications/Capture.PNG"
+    },
+    {
+        "link":"assets/certifications/Advanced Angular Topics.pdf",
+        "photo":"assets/photos/certifications/Capture02.PNG"
+    },
+    {
+        "link":"assets/certifications/Angular 17 Overview and Basics.pdf",
+        "photo":"assets/photos/certifications/Capture03.PNG"
+    },
+    {
+        "link":"assets/certifications/Angular 17.pdf",
+        "photo":"assets/photos/certifications/Capture04.PNG"
+    },
+    {
+        "link":"assets/certifications/Data Structures and BackEnd with Java.pdf",
+        "photo":"assets/photos/certifications/Capture05.PNG"
+    },
+    {
+        "link":"assets/certifications/FrontEnd Development Using React.pdf",
+        "photo":"assets/photos/certifications/Capture06.PNG"
+    },
+    {
+        "link":"assets/certifications/FrontEnd for Java Full Stack Development.pdf",
+        "photo":"assets/photos/certifications/Capture07.PNG"
+    },
+    {
+        "link":"assets/certifications/Fundamentals of Java Programming.pdf",
+        "photo":"assets/photos/certifications/Capture08.PNG"
+    },
+    {
+        "link":"assets/certifications/Java Fullstack Developer.pdf",
+        "photo":"assets/photos/certifications/Capture09.PNG"
+    },
+    {
+        "link":"assets/certifications/NobleProg Cert - Angular 16 Certificate for Ramses Joshua Manliclic - 2024-03-04.pdf",
+        "photo":"assets/photos/certifications/Capture10.PNG"
+    }
+]
