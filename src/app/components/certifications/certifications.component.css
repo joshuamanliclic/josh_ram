@@ -8,7 +8,7 @@
     width: 350px;
     height: 250px;
     overflow: hidden;
-    pointer-events: none;
+    object-fit: contain;
 }
 
 mat-grid-tile:hover {

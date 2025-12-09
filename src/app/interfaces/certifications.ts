@@ -1,3 +1,4 @@
 export interface Certificates {
-    link: string
+    link: string,
+    photo: string
 }
